@@ -4,4 +4,4 @@ C source code
 ## gdbcmd
 gdb -x <file_name>
 ## output
-Output 
+cat <file> 

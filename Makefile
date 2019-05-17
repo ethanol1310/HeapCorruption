@@ -1,8 +1,10 @@
 CC = gcc
 SRC = src/
+FNOSP = -fno-stack-protector
+
 all: af ff o1 o1n so wf
 af: $(SRC)af.c
-	$(CC) -o $@ $<
+	$(CC) -o $@ $< 
 ff: $(SRC)ff.c
 	$(CC) -o $@ $<
 o1: $(SRC)o1.c
@@ -10,6 +12,6 @@ o1: $(SRC)o1.c
 o1n: $(SRC)o1n.c
 	$(CC) -o $@ $<
 so: $(SRC)so.c
-	$(CC) -o $@ $<
+	$(CC) -o $@ $< $(FNOSP)
 wf: $(SRC)wf.c
 	$(CC) -o $@ $<

@@ -1,0 +1,44 @@
+Script started on Thứ sáu, 17 Tháng năm Năm 2019 21:53:55 +07
+]0;puglu@puglu-virtual-machine: ~/Desktop/cor[01;32mpuglu@puglu-virtual-machine[00m:[01;34m~/Desktop/cor[00m$ ./af
+address tmp1: 0x1d7e010
+Value of c: 1d7e010
+Freeing valid heap...
+Freeing invalid heap...(stack)
+*** Error in `./af': free(): invalid pointer: 0x00007ffea79321a8 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x777e5)[0x7fc3cb9c87e5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x8037a)[0x7fc3cb9d137a]
+/lib/x86_64-linux-gnu/libc.so.6(cfree+0x4c)[0x7fc3cb9d553c]
+./af[0x40070f]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7fc3cb971830]
+./af[0x400599]
+======= Memory map: ========
+00400000-00401000 r-xp 00000000 08:01 1088208                            /home/puglu/Desktop/cor/af
+00600000-00601000 r--p 00000000 08:01 1088208                            /home/puglu/Desktop/cor/af
+00601000-00602000 rw-p 00001000 08:01 1088208                            /home/puglu/Desktop/cor/af
+01d7e000-01d9f000 rw-p 00000000 00:00 0                                  [heap]
+7fc3c4000000-7fc3c4021000 rw-p 00000000 00:00 0 
+7fc3c4021000-7fc3c8000000 ---p 00000000 00:00 0 
+7fc3cb73b000-7fc3cb751000 r-xp 00000000 08:01 399294                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc3cb751000-7fc3cb950000 ---p 00016000 08:01 399294                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc3cb950000-7fc3cb951000 rw-p 00015000 08:01 399294                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc3cb951000-7fc3cbb11000 r-xp 00000000 08:01 402023                     /lib/x86_64-linux-gnu/libc-2.23.so
+7fc3cbb11000-7fc3cbd11000 ---p 001c0000 08:01 402023                     /lib/x86_64-linux-gnu/libc-2.23.so
+7fc3cbd11000-7fc3cbd15000 r--p 001c0000 08:01 402023                     /lib/x86_64-linux-gnu/libc-2.23.so
+7fc3cbd15000-7fc3cbd17000 rw-p 001c4000 08:01 402023                     /lib/x86_64-linux-gnu/libc-2.23.so
+7fc3cbd17000-7fc3cbd1b000 rw-p 00000000 00:00 0 
+7fc3cbd1b000-7fc3cbd41000 r-xp 00000000 08:01 402009                     /lib/x86_64-linux-gnu/ld-2.23.so
+7fc3cbf25000-7fc3cbf28000 rw-p 00000000 00:00 0 
+7fc3cbf3f000-7fc3cbf40000 rw-p 00000000 00:00 0 
+7fc3cbf40000-7fc3cbf41000 r--p 00025000 08:01 402009                     /lib/x86_64-linux-gnu/ld-2.23.so
+7fc3cbf41000-7fc3cbf42000 rw-p 00026000 08:01 402009                     /lib/x86_64-linux-gnu/ld-2.23.so
+7fc3cbf42000-7fc3cbf43000 rw-p 00000000 00:00 0 
+7ffea7914000-7ffea7935000 rw-p 00000000 00:00 0                          [stack]
+7ffea79b5000-7ffea79b8000 r--p 00000000 00:00 0                          [vvar]
+7ffea79b8000-7ffea79ba000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Aborted (core dumped)
+]0;puglu@puglu-virtual-machine: ~/Desktop/cor[01;32mpuglu@puglu-virtual-machine[00m:[01;34m~/Desktop/cor[00m$ exit
+exit
+
+Script done on Thứ sáu, 17 Tháng năm Năm 2019 21:54:01 +07

@@ -1,0 +1,17 @@
+Script started on Thứ sáu, 17 Tháng năm Năm 2019 21:59:34 +07
+]0;puglu@puglu-virtual-machine: ~/Desktop/cor[01;32mpuglu@puglu-virtual-machine[00m:[01;34m~/Desktop/cor[00m$ ./wf
+address a: 0x1033010
+string a: string a
+address b: 0x10330a0
+string b: string b
+freeing a...
+allocate c...
+address c: 0x1033010
+string c: x�S�
+put a string here (write after free): string c
+address a: 0x1033010
+string a: string c
+]0;puglu@puglu-virtual-machine: ~/Desktop/cor[01;32mpuglu@puglu-virtual-machine[00m:[01;34m~/Desktop/cor[00m$ exit
+exit
+
+Script done on Thứ sáu, 17 Tháng năm Năm 2019 21:59:40 +07

@@ -1,0 +1,17 @@
+Script started on Thứ sáu, 17 Tháng năm Năm 2019 21:54:25 +07
+]0;puglu@puglu-virtual-machine: ~/Desktop/cor[01;32mpuglu@puglu-virtual-machine[00m:[01;34m~/Desktop/cor[00m$ ./ff
+Allocating 3 strings.
+a malloc(32): 0x24c9420
+b malloc(32): 0x24c9450
+c malloc(32): 0x24c9480
+Freeing a...
+Freeing b...
+Freeing a again...  ---> Double free
+Allocating 3 strings.
+1st malloc(32): 0x24c9420
+2nd malloc(32): 0x24c9450
+3rd malloc(32): 0x24c9420  ---> Double free
+]0;puglu@puglu-virtual-machine: ~/Desktop/cor[01;32mpuglu@puglu-virtual-machine[00m:[01;34m~/Desktop/cor[00m$ exit
+exit
+
+Script done on Thứ sáu, 17 Tháng năm Năm 2019 21:54:30 +07

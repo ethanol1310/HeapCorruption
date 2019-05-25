@@ -2,14 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-int strlenS(char *ptr)
-{
-	// +1 for NULL
-	return strlen(ptr) + 1;
-}
 int main(int argc, char **argv)
 {
-	if(strlenS(argv[1]) > 8)
+	// +1 for NULL
+	if((strlen(argv[1]) + 1) > 8)
 	{
 		printf("Overflow...");
 		exit(-1);
